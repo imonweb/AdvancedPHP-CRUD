@@ -1,6 +1,7 @@
 <?php 
 
-define('DBHOST', 'localhost');
-define('DBNAME', 'php_advanced_crud');
-define('DBUSER', 'imon');
-define('DBPASS', 'p@ssw0rd');
+session_start();
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'php_advanced_crud');
+define('DB_USER', 'imon');
+define('DB_PASS', 'p@ssw0rd');

@@ -1,6 +1,8 @@
 <?php 
 include_once('class/config.php');
 include_once('class/database.php');
+
+$objDB = new DB();
 ?>
 <!DOCTYPE html>
 <html lang="en">

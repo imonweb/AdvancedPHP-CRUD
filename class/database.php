@@ -10,17 +10,17 @@ class DB {
   public $SQL;
 
   public function __construct(){
-    $this->DB_HOST = DBHOST;
-    $this->DB_NAME = DBNAME;
-    $this->DB_USER  = DBUSER;
-    $this->DB_PASS  = DBPASS;
+    $this->DB_HOST = DB_HOST;
+    $this->DB_NAME = DB_NAME;
+    $this->DB_USER  = DB_USER;
+    $this->DB_PASS  = DB_PASS;
     $this->conn = null;
     $this->SQL = "";
     $this->dbconnect();
   }
 
   public function dbconnect() {
-    $this->conn = mysqli_connect($this->$DB_HOST, $this->DB_NAME, $this->$DB_USER, $this->$DB_PASS);
+    $this->conn = mysqli_connect($this->DB_HOST, $this->DB_USER, $this->DB_PASS);
     if(!$this->conn) {
       return "Database Connection Error";
     }

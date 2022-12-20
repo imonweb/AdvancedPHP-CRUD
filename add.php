@@ -1,7 +1,7 @@
 <?php include_once('header.php'); ?>
-<center>
+ 
   <h1>Add User</h1>
-</center>
+ 
 <form action="save.php" method="post">
   <div class="container">
     <label for="">First Name : </label>
